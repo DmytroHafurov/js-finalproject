@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="watch">
+        <h2 id="timer">01:00</h2>
+    </div>
+
+    <div class="buttons">
+        <button id="start" onclick="startTimer()">Start game!</button>
+        <button id="checkres">Check result</button>
+        <button id="new">New game!</button>
+    </div>
+
+    <div class="puzzle">
+        <div id="x" class="sort">
+            <div class="pic title1"></div>
+            <div class="pic title2"></div>
+            <div class="pic title3"></div>
+            <div class="pic title4"></div>
+            <div class="pic title5"></div>
+            <div class="pic title6"></div>
+            <div class="pic title7"></div>
+            <div class="pic title8"></div>
+            <div class="pic title9"></div>
+            <div class="pic title10"></div>
+            <div class="pic title11"></div>
+            <div class="pic title12"></div>
+            <div class="pic title13"></div>
+            <div class="pic title14"></div>
+            <div class="pic title15"></div>
+            <div class="pic title16"></div>            
+        </div>
+
+        <div id="end" class="sort"> 
+        </div>
+    </div>
+
+    <div class="check hide">
+        <p class="time hide">You still have time, you sure ?</p>
+        <p class="loose hide">It's a pity, but you lost</p>
+        <p class="win hide">Woohoo, well done, you did it!</p>
+        <div>
+            <button id="close">Close</button>
+            <button id="check" onclick="checkOrder('start')">Check</button>
+        </div>
+    </div>
+    
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
